@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sartaj's Portfolio</title>
+
+<style>
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4e73df,#1cc88a);
+    color:#333;
+}
+
+/* Main Heading */
+h1{
+    text-align:center;
+    padding:20px;
+    color:white;
+    animation: fadeDown 1.5s ease;
+}
+
+/* Navbar */
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#1cc88a;
+}
+
+/* Container */
+.container{
+    width:85%;
+    margin:auto;
+    padding:20px 0;
+}
+
+/* Sections */
+section{
+    background:white;
+    margin:40px 0;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    animation: fadeUp 1.2s ease;
+}
+
+/* Section Titles */
+section h2{
+    margin-bottom:15px;
+    color:#4e73df;
+}
+
+/* Boxes */
+.box{
+    background:#f8f9fc;
+    padding:12px;
+    margin:10px 0;
+    border-left:5px solid #1cc88a;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:translateX(10px);
+    background:#e2f5ee;
+}
+
+/* Profile Photo */
+.profile-photo{
+    width:150px;
+    border-radius:50%;
+    display:block;
+    margin:15px auto;
+    border:4px solid #4e73df;
+    transition:0.4s;
+}
+
+.profile-photo:hover{
+    transform:scale(1.1);
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer nav{
+    background:none;
+    margin-top:10px;
+}
+
+/* Animations */
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Sartaj's Portfolio</h1>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<section id="about">
+    <h2>About Me</h2>
+    <!-- IMPORTANT: Change this image path -->
+    <img src="yourphoto.jpg" class="profile-photo">
+    <div class="box">
+        Hi, my name is <b>Syed Sartaj Akhtar</b>. 
+        I'm <b>14</b> years old and a <b>Class 8</b> student at 
+        <b>Pride International School</b>. 
+        I enjoy studying <b>English</b>, working on creative ideas, 
+        and improving myself every day.
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="box">Gaming</div>
+    <div class="box">Art & Drawing</div>
+    <div class="box">Basic Programming</div>
+    <div class="box">Public Speaking</div>
+    <div class="box">Maintaining a YouTube Channel</div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="box">Currently studying in Class 8 at Pride International School.</div>
+    <div class="box">Learning Programming and Video Editing.</div>
+    <div class="box">Favorite Subjects: Science and English.</div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="box">School Events Volunteer</div>
+    <div class="box">Public Speaking & Presentations</div>
+    <div class="box">Art and Craft Tournament Participant</div>
+    <div class="box">Olympiad Participant</div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="box">Email: <b>akhtarfatima323@gmail.com</b></div>
+    <div class="box">
+        <a href="https://youtube.com/@senpaissnake" target="_blank">
+            Visit My YouTube Channel
+        </a>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 by Syed Sartaj Akhtar - Class 8</p>
+</footer>
+
+</body>
+</html>
